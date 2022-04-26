@@ -1,0 +1,175 @@
+/* This is where your CSS style definitions should be placed. */
+/* --------------- Misc. info --------------------- */
+/*   
+    Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width. 
+*/
+/* -------------------- Mobile Screen ---------------------- */
+/* ---------------------- Styles ---------------------- */
+html {
+    font-family: sans-serif;
+    background-color:#f1f4f60c;
+}
+
+body {
+    line-height: 1.45em;
+    font-size: 0.9em;
+    width: 96%; 
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+
+th {
+    display: none;
+}
+
+td:nth-child(1) {
+    width: 70%;
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+td {
+    display: block;
+    float: left;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatar {    
+    width: 200px; 
+    height:200px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.563em;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 1.25em;
+    margin: 0.2em 0;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+}
+
+#offer-section {
+    padding-bottom: 1em;
+}
+
+#rate-section {
+    padding-bottom: 1em;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    color:coral;
+    text-decoration: none;
+}
+
+
+a:hover, a:focus {
+    color:blue;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    background-color: coral;
+    color: coral;
+    border-style: solid;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dark-mode{
+    height: fit-content;
+}
+
+button:hover, button:focus {
+    background-color: coral;
+    color: azure;
+}
+
+/* -------------------- Tablet Screen ---------------------- */
+@media all and (min-width:651px) { 
+	/* ---------------------- Styles ----------------------- */
+    body {
+        width: 70vw;
+        margin: 1em auto;
+        font-size: 1em;
+    }
+
+    table {
+        border: 2px solid rgb(200, 200, 200);
+    }
+    
+    th {
+        display: table-cell;
+        border: 1px solid rgb(190, 190, 190);
+    }
+
+    td:nth-child(1) {
+        width: auto;
+        font-weight: normal;
+    }
+    
+    td:nth-child(2) {
+        width: auto;
+        text-align: center;
+    }
+
+    td {
+        display: table-cell;
+        float: none;
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px 20px;
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+    
+    #avatar {
+        margin-right: 5em;
+    }
+    
+    h1 {
+        padding-top: 2em;
+        font-size: 1.69em;
+    }
+    
+} 
+
+/* -------------------- Desktop Screen --------------------- */
+@media all and (min-width:1026px) {  
+	/* ---------------------- Styles ----------------------- */
+}
