@@ -119,6 +119,21 @@ button:hover, button:focus {
     color: azure;
 }
 
+[aria-invalid="true"] {
+    border-color:  red;
+    box-shadow:  0 0 2px red;
+}
+
+.errmsg p {
+    color:  red; /* Make text red */
+}
+
+label {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+}
+
 /* -------------------- Tablet Screen ---------------------- */
 @media all and (min-width:651px) { 
 	/* ---------------------- Styles ----------------------- */
@@ -126,6 +141,11 @@ button:hover, button:focus {
         width: 70vw;
         margin: 1em auto;
         font-size: 1em;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
     }
 
     table {
