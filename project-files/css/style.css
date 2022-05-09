@@ -54,13 +54,18 @@ td {
     border-radius: 50%;
 }
 
+img {
+    width: 100px; 
+    height:128px;
+}
+
+
 h1 {
     font-size: 1.563em;
     padding-bottom: 0.5em;
 }
 
 h2 {
-    text-decoration: underline;
     font-size: 1.25em;
     margin: 0.2em 0;
 }
@@ -93,6 +98,7 @@ a {
 
 a:hover, a:focus {
     color:blue;
+    text-decoration: underline;
 }
 
 p {
@@ -117,6 +123,7 @@ hr {
 button:hover, button:focus {
     background-color: coral;
     color: azure;
+    text-decoration: underline;
 }
 
 [aria-invalid="true"] {
